@@ -1,3 +1,10 @@
 #!/usr/bin/env ruby
 
-data = File.read("./input/input01")
+file = File.open('./input/input01.txt').read
+
+open = file.count '('
+closed = file.count ')'
+
+result = open - closed
+
+File.open("./output/output01.txt", "w+") { |f| f.write "#{ result }" }
