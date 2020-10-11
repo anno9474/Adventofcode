@@ -1,1 +1,2 @@
-74
+This is the first result: 74 
+This is the second result: 7074
